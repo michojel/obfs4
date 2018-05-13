@@ -1,0 +1,45 @@
+hash: eb238b058af07548dc646c67b680b6ed53d7a010dc4e668af5936581aa0a97c7
+updated: 2018-05-13T15:31:18.912216656+02:00
+imports:
+- name: git.torproject.org/pluggable-transports/goptlib.git
+  version: fcc1d072d63b3e843495d4af4c0f522ddbb9fefc
+- name: git.torproject.org/pluggable-transports/obfs4.git
+  version: 89c21805c212bcc2f5a0c4ffdadf424cbff1c7c9
+  subpackages:
+  - common/csrand
+  - common/drbg
+  - common/log
+  - common/ntor
+  - common/probdist
+  - common/replayfilter
+  - common/socks5
+  - common/uniformdh
+  - transports
+  - transports/base
+  - transports/meeklite
+  - transports/obfs2
+  - transports/obfs3
+  - transports/obfs4
+  - transports/obfs4/framing
+  - transports/scramblesuit
+- name: github.com/agl/ed25519
+  version: 5312a61534124124185d41f09206b9fef1d88403
+  subpackages:
+  - edwards25519
+  - extra25519
+- name: github.com/dchest/siphash
+  version: 4ebf1de738443ea7f45f02dc394c4df1942a126d
+- name: golang.org/x/crypto
+  version: 94e3fad7f1b4eed4ec147751ad6b4c4d33f00611
+  subpackages:
+  - curve25519
+  - hkdf
+  - nacl/secretbox
+  - poly1305
+  - salsa20/salsa
+- name: golang.org/x/net
+  version: 2491c5de3490fced2f6cff376127c667efeed857
+  subpackages:
+  - internal/socks
+  - proxy
+testImports: []
